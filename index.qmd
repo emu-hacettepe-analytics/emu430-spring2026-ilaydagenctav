@@ -3,10 +3,10 @@ title: "Welcome to My Analytics Lab"
 sidebar: false 
 ---
 
-Hello! My name is İlayda GENÇTAV.
+Hello! My name is Ilayda Gençtav.
 
-This is my personal webpage.
+I am a student in the Industrial Engineering Department at Hacettepe University.
 
-Please stay tuned to follow my works on data analytics, blog posts, and more.
+This website was created for the EMU430 course. Here I will publish my assignments, projects, and blog posts related to data analytics.
 
-This is our template.
+You can navigate through the pages above to explore my work.
