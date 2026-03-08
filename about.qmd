@@ -5,26 +5,30 @@ sidebar: false
 
 # Education
 
--   B.S., Industrial Engineering, Hacettepe University, Turkey, 20xx - ongoing.
+-   B.S., Industrial Engineering, Hacettepe University, Turkey, 2026– ongoing.
 
 # Work Experience
 
 ## Employements
 
-1.  Firm xxx, position xx, year xxx
-
-2.  Firm yyy, position yyy, year yyy
+Quality Control Engineer, Güvenli Yaşam, Turkey, 2026 – ongoing.\
+\
+Organization Lead, Socia Startup, Turkey, 2025 – ongoing.
 
 ## Internships
 
-1.  Firm aaa, position xx, year xxx
-
-2.  Firm bbb, position yyy, year yyy
+Production Internship, Kozanoğlu Kozmaksan, Turkey, 2024.\
+\
+Continuous Improvement Internship, Yarış Kabin, Turkey, 2025.
 
 # Projects
 
+Socia – A social discovery platform that connects users with niche and local events and helps people discover high-quality local experiences.
+
 # Competencies
 
-R, Quarto, Git, Python
+R, Quarto, Git, SQL
 
 # Hobbies
+
+Technology, entrepreneurship, data analytics, sports
