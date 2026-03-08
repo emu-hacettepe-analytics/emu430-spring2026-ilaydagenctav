@@ -4,12 +4,95 @@ title: "Assignment 1"
 
 # Assignment 1
 
-```{r}
-1 + 1
-```
-
 My first assignment has two parts.
 
-## (a)
+## (a) Video Summary
 
-## (b)
+For this assignment, I watched the video titled *"Veri Bilimi ve Endüstri Mühendisliği Üzerine Sohbetler – Kerem Demirtaş & Erdi Daşdemir"*.
+
+This video presents a discussion on how data science relates to industrial engineering. It explains how industrial engineers use data to improve decision-making processes within organizations and optimize efficiency through proper design and analysis.
+
+The discussion also highlights the importance of data analytics skills for industrial engineers. Many modern engineering problems involve analyzing large datasets, building predictive models, and applying statistical techniques.
+
+In conclusion, the video underlines that knowledge of data science is becoming a necessary skill set for industrial engineers who want to work in areas such as operations research, optimization, and digital transformation.
+
+## (b) Questions
+
+### Open-ended Question
+
+Why are data analytics and data-driven decision making becoming increasingly important for industrial engineers?
+
+**Answer:**\
+Because modern organizations generate large amounts of data. Industrial engineers use this data to improve operational efficiency, optimize systems, and support strategic decision making.
+
+### Multiple Choice Question
+
+Which of the following best describes the role of data science in industrial engineering?
+
+A)  Designing physical machines\
+B)  Analyzing data to improve systems and decision-making\
+C)  Managing human resources\
+D)  Producing raw materials
+
+**Correct Answer:** B
+
+## Data Analysis with R
+
+```{r}
+library(dslabs)
+data("polls_us_election_2016")
+
+my_first <- "Ilayda"
+my_birth_year <- 2002
+
+k <- (nchar(my_first) + my_birth_year) %% 15 + 8
+k
+```
+
+```{r}
+data <- polls_us_election_2016
+
+if (k %% 2 == 0) {
+  head(data, k)
+} else {
+  tail(data, k)
+}
+```
+
+```{r}
+sum(is.na(data))
+```
+
+```{r}
+na_per_column <- colSums(is.na(data))
+sort(na_per_column, decreasing = TRUE)[1:8]
+```
+
+```{r}
+new_data <- data
+
+for (col in names(new_data)) {
+  if (is.numeric(new_data[[col]])) {
+    new_data[[col]][is.na(new_data[[col]])] <- my_birth_year + k
+    
+  } else if (inherits(new_data[[col]], "Date")) {
+    new_data[[col]][is.na(new_data[[col]])] <- as.Date("2002-01-01")
+    
+  } else {
+    new_data[[col]][is.na(new_data[[col]])] <- paste0(my_first, "_", k)
+  }
+}
+```
+
+```{r}
+if (k %% 2 == 0) {
+  head(new_data, k)
+} else {
+  tail(new_data, k)
+}
+```
+
+```{r}
+sum(is.na(new_data))
+anyNA(new_data)
+```
