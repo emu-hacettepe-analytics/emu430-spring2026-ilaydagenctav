@@ -3,7 +3,8 @@ project:
   output-dir: docs
 
 website:
-  title: "[Student/Group Full Name]'s Analytics Lab"
+  title: "Ilayda Genctav's Analytics Lab"
+
   navbar:
     search: true
     left:
@@ -19,15 +20,13 @@ website:
             href: assignments.qmd
           - text: Project
             href: project.qmd
-            
+
     tools:
       - icon: github
-        href: https://twitter.com
-      - icon: twitter
-        href: https://twitter.com
+        href: https://github.com/ilaydagenctav
       - icon: linkedin
-        href: https://linkedin.com
-
+        href: https://www.linkedin.com/in/ilaydagen%C3%A7tav/
+            
   sidebar:
     - title: "Assignments"
       style: "docked"
