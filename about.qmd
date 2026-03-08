@@ -32,3 +32,9 @@ R, Quarto, Git, SQL
 # Hobbies
 
 Technology, entrepreneurship, data analytics, sports
+
+## My CV
+
+You can download my CV here:
+
+[Download my CV](cv/Ilayda_Genctav_CV.pdf)
